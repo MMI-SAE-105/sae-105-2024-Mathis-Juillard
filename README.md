@@ -3,11 +3,11 @@
 
 À compléter :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
+- NOM : Juillard
+- PRÉNOM : Mathis
+- GROUPE : B2
 - URL du site :
-- URL FIGMA :
+- URL FIGMA : https://www.figma.com/design/UbtNRT0S6Go6ASjdiu9s6e/Mathis_Juillard-SA%C3%89-103-(Copy)?node-id=7-3&t=ZqwBEZ8WbHnp9LwJ-1
 
 ## Sujet
 
