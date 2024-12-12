@@ -1,1 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
 
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #82A8D9;
+    padding: 1rem;
+    font-family: 'Ultra', sans-serif;
+}
+
+.menu__logo-container {
+    display: flex;
+    align-items: left;
+}
+
+.menu__logo-container img {
+    height: 50px;
+    margin-right: 1rem;
+}
+
+.menu__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.menu__item {
+    margin-left: 1.5rem;
+}
+
+.menu__link {
+    text-decoration: none;
+    color:  #BF495E;
+    font-size: 1rem;
+    transition: color 0.3s;
+    font-family: 'Ultra', sans-serif;
+}
+
+.menu__link:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.menu__close-button {
+    border: black;
+    color: black;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.menu__close-button:hover {
+    color: black;
+}
