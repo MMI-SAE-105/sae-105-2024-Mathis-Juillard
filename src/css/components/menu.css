@@ -1,59 +1,102 @@
-@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
-
+/* Style général du menu */
 .menu {
+    visibility: hidden;
     display: flex;
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    background-color: var(--gray-800);
+    color: var(--white);
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    background-color: #82A8D9;
-    padding: 1rem;
-    font-family: 'Ultra', sans-serif;
-}
-
-.menu__logo-container {
+    padding: var(--space5x) var(--space3x) var(--space3x);
+    transform: translateX(100vw);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .menu[aria-hidden="false"] {
+    transform: translateX(0);
+    visibility: visible;
+  }
+  
+  .menu__link {
+    color: var(--white);
+    text-decoration: none;
+    font-size: var(--fs-xl);
+    display: block;
+  }
+  
+  .menu__link--silent {
+    color: var(--gray-600);
+    font-size: var(--fs-s);
+  }
+  
+  .menu__item {
+    margin-bottom: var(--space3x);
+    padding-bottom: var(--space1x);
+    border-bottom: 1px solid var(--white);
+  }
+  
+  .menu__social-network,
+  .menu__terms {
     display: flex;
-    align-items: left;
-}
-
-.menu__logo-container img {
-    height: 50px;
-    margin-right: 1rem;
-}
-
-.menu__list {
-    list-style: none;
+    gap: var(--space2x);
+    justify-content: end;
+    margin-bottom: var(--space2x);
+  }
+  
+  .menu-btn {
+    position: relative;
+    width: 30px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    padding: 0;
+    cursor: pointer; /* Ajoutez un curseur de pointeur pour indiquer que c'est cliquable */
+  }
+  
+  .menu-btn__bar,
+  .menu-btn__bar::before,
+  .menu-btn__bar::after {
+    content: "";
+    background: var(--black);
+    height: 2px;
     width: 100%;
-}
-
-.menu__item {
-    margin-left: 1.5rem;
-}
-
-.menu__link {
-    text-decoration: none;
-    color:  #BF495E;
-    font-size: 1rem;
-    transition: color 0.3s;
-    font-family: 'Ultra', sans-serif;
-}
-
-.menu__link:hover {
-    text-decoration: underline;
-    color: white;
-}
-
-.menu__close-button {
-    border: black;
-    color: black;
-    font-size: 1.5rem;
-    cursor: pointer;
-    transition: color 0.3s;
-}
-
-.menu__close-button:hover {
-    color: black;
-}
+    position: absolute;
+    border-radius: 2px;
+    left: 0;
+    z-index: 10;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .menu-btn__bar::before {
+    top: -10px;
+  }
+  
+  .menu-btn__bar::after {
+    top: 10px;
+  }
+  
+  /* Technique pour transformer les 3 barres du bouton de menu en croix */
+  .menu-btn[aria-expanded="true"] .menu-btn__bar {
+    background: transparent;
+  }
+  
+  .menu-btn[aria-expanded="true"] .menu-btn__bar::before,
+  .menu-btn[aria-expanded="true"] .menu-btn__bar::after {
+    top: 0;
+  }
+  
+  .menu-btn[aria-expanded="true"] .menu-btn__bar::before {
+    transform: rotate(45deg);
+  }
+  
+  .menu-btn[aria-expanded="true"] .menu-btn__bar::after {
+    transform: rotate(-45deg);
+  }
+  
+  /* Classe pour désactiver le défilement de la page */
+  .noscroll {
+    overflow: hidden;
+  }
+  
