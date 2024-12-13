@@ -6,16 +6,17 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 20px;
+	padding: 10px;
 	background-color: #fff;
 	color: #333;
-	border-bottom: 5px solid #f5c6d6;
+	
 }
 
 /* Style pour le logo */
 .header__logo {
 	display: flex;
 	align-items: center;
+	height: 70px
 }
 
 .header__logo-image {
@@ -26,8 +27,7 @@ body {
 .header__title {
 	font-size: 1.5rem;
 	font-weight: bold;
-	margin: 0;
-	color: #f06292;
+	margin: 0px;
 }
 
 /* Style pour le menu */
@@ -43,27 +43,42 @@ body {
 }
 
 /* Ajout de styles responsives */
-@media (max-width: 768px) {
-	.header {
-    	flex-direction: column;
-    	align-items: flex-start;
-	}
-
-	.header__menu {
-    	width: 100%;
-    	margin-top: 10px;
-	}
-
-	.header__menu-toggle {
-    	font-size: 1.25rem;
-	}
-}
+	header {
+		position: fixed;
+		left: 0;
+		top: 0;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		display: flex;
+		padding: var(--space1x) 1vw; 
+		background-color: var(--main-colors-rouge-1);
+		z-index: 10;
+	  }
+	  
+	  
+	  .header__menu-btn {
+		display: none;
+		margin-right: 40px;
+	  }
+	  
+	  .header__logo {
+		display: flex;
+		align-items: center;
+	  }
+	  
+	  .header__name   {
+		color: var(--rose-foncé);
+		font-size: var(--tt-h3);
+		margin-right: var(--space2x);
+		font-family: "popins", sans-serif;
+	  }
 
 /* Style pour le menu principal */
 .menu {
 	background-color: #87CEEB;
 	padding: 20px;
-	color: #f06292;
+	color: white;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -88,7 +103,7 @@ body {
 }
 
 .menu__logo-title {
-	font-size: 2rem;
+	font-size: 1rem;
 	color: #f06292;
 	text-align: center;
 }

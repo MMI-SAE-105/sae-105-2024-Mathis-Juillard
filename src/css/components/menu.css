@@ -8,7 +8,7 @@
     color: white;
     flex-direction: column;
     justify-content: space-between;
-    
+    margin: 0px;
     transform: translateX(100vw);
     transition: all 0.3s ease-in-out;
   }
@@ -18,15 +18,15 @@
   }
   
   .menu__link {
-    color: white;
+    color: var(--rose-foncé);
     text-decoration: none;
-    font-size: var(--fs-xl);
+    font-size: var(--fs-taille1);
     display: block;
   }
   
   .menu__item {
     margin-bottom: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 100px;
   }
   
 
@@ -42,13 +42,15 @@
     appearance: none;
     background: transparent;
     border: none;
+    top : 0;
+    right : 0;
   }
   
   .menu-btn__bar,
   .menu-btn__bar::before,
   .menu-btn__bar::after {
     content: "";
-    background: red;
+    background: black;
     height: 2px;
     width: 100%;
     position: absolute;
