@@ -8,3 +8,21 @@ h1 {
   font-family: var(--font-inter);
   color: var(--rose-foncé);
 }
+h2 {
+  text-align: center;
+  font-size: var(--fs-taille2);
+  font-family: var(--font-ultra);
+  color: var(--noir);
+}
+p {
+  text-align: center;
+  font-size: var(--fs-taille2);
+  font-family: var(--font-inter);
+  color: var(--noir);
+}
+h3 {
+  text-align: center;
+  font-size: var(--fs-taille3);
+  font-family: var(--font-roboto);
+  color: var(--noir);
+}
