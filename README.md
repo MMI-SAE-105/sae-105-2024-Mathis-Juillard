@@ -6,7 +6,7 @@
 - NOM : Juillard
 - PRÉNOM : Mathis
 - GROUPE : B2
-- URL du site : https://wonderful-palmier-49b523.netlify.app 
+- URL du site : https://wonderful-palmier-49b523.netlify.app Toujours en attente ![alt text](<Screenshot 2024-12-13 08.23.40.png>)
 - URL FIGMA : https://www.figma.com/design/UbtNRT0S6Go6ASjdiu9s6e/Mathis_Juillard-SA%C3%89-103-(Copy)?node-id=7-3&t=ZqwBEZ8WbHnp9LwJ-1
 
 ## Sujet
