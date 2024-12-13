@@ -3,15 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="/src/js/script.js"></script>
+  <link rel="icon" type="image/png" href="assets/favicon/android-chrome-192x192.png" sizes="192x192"/>
   <title>Festival Miaullywood - À Propos</title>
 </head>
-<link
-rel="icon"
-type="image/png"
-href="assets/favicon/android-chrome-192x192.png"
-sizes="192x192"
-/>
+
 <body>
   <header class="header">
     <div class="header__logo">
@@ -26,57 +23,45 @@ sizes="192x192"
 
     </nav>
   </header>
+  
   <section class="competition">
     <h2 class="competition__title">Les films en compétition</h2>
 
     <body>
-      <h1>Test Carousel</h1>
       <div class="carousel" aria-labelledby="carousel-heading">
-        <h2 id="carousel-heading" class="carousel__heading sr-only">
-          Carousel d'images musicales
-        </h2>
-       <ul>
-      <a href="#img1"> Image 1</a>
-      <a href="#img2"> Image 2</a>
-      <a href="#img3"> Image 3</a>
-      <a href="#img4"> Image 4</a>
-      <a href="#img5"> Image 5</a>
-      </ul>
-    
-        <div class="carousel__container" role="region" aria-live="polite">
-          <div class="carousel__item">
-            <img id="img1" src="/assets/img/agenda-01.avif" alt="Image musique 1" />
-          </div>
-          <div class="carousel__item">
-            <img id="img2" src="/assets/img/agenda-02.avif" alt="Image musique 2" />
-          </div>
-          <div class="carousel__item">
-            <img id="img3" src="/assets/img/agenda-03.avif" alt="Image musique 3" />
-          </div>
-          <div class="carousel__item">
-            <img id="img4" src="/assets/img/agenda-04.avif" alt="Image musique 4" />
-          </div>
-          <div class="carousel__item">
-            <img id="img5" src="/assets/img/agenda-05.avif" alt="Image musique 5" />
-          </div>
-        </div>
-        <div class="carousel__controls">
-          <button class="carousel__button carousel__button--prev" aria-label="Défiler vers la gauche">
-            <img src="/assets/icones/icon_arrowcarrousel.svg" alt="fleche gauche" />
-          </button>
-          <button class="carousel__button carousel__button--next" aria-label="Défiler vers la droite">
-            <img src="/assets/icones/icon_arrowcarrousel.svg" alt="fleche droite" />
-          </button>
-        </div>
-      </div>
-    </body>
+        <ul>
+       <a href="#img1"> Image 1</a>
+       <a href="#img2"> Image 2</a>
+       <a href="#img3"> Image 3</a>
+       </ul>
+     
+         <div class="carousel__container" role="region" aria-live="polite">
+           <div class="carousel__item">
+             <img id="img1" src="/assets/img/vache.webp" alt="Image musique 1" />
+           </div>
+           <div class="carousel__item">
+             <img id="img2" src="/assets/img/orque.webp" alt="Image musique 2" />
+           </div>
+           <div class="carousel__item">
+             <img id="img3" src="/assets/img/film3.webp" alt="Image musique 3" />
+           </div>
+         </div>
+         <div class="carousel__controls">
+           <button class="carousel__button carousel__button--prev" aria-label="Défiler vers la gauche">
+             <img src="/assets/favicon/icon_arrowcarrousel.svg" alt="fleche gauche" />
+           </button>
+           <button class="carousel__button carousel__button--next" aria-label="Défiler vers la droite">
+             <img src="/assets/favicon/icon_arrowcarrousel.svg" alt="fleche droite" />
+           </button>
+         </div>
+       </div>
 
     <div class="competition__film">
-      <img src="assets/img/vache.webp" alt="">
+     
       <p>Cowspiracy : The Sustainability Secret explore l’impact dévastateur de l’industrie de l’élevage sur l’environnement et pourquoi les principales organisations environnementales refusent d’en parler. Ce film, à la fois choquant et éducatif, met en lumière le lien entre la consommation de viande et les problèmes environnementaux tels que la déforestation, la pollution des océans et le changement climatique.</p>
-      <img src="assets/img/orque.webp" alt="">
+      
       <p>Ce film suit l’histoire tragique des orques captives et de leurs traitements dans les parcs marins. En explorant la vie d’une orque particulière, ce documentaire plonge au cœur des controverses liées aux spectacles animaliers. Une réflexion poignante sur la captivité des animaux marins et ses conséquences sur leur comportement, leur santé et leur bien-être.</p>
-      <img src="assets/img/film3.webp" alt="">
+      
       <p>Animal Crackers raconte l’histoire d’une famille qui hérite d’un cirque et découvre que la clé de leur succès réside dans une boîte de biscuits magiques. Ces biscuits permettent à ceux qui les mangent de se transformer en différents animaux. Ce film d’animation drôle et léger met en avant des thèmes de famille, de courage et d’amitié, tout en offrant une aventure fantastique à travers le cirque.	</p>
   </section>
   <div class="competition__film">

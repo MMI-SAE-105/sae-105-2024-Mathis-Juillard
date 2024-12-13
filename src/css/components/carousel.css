@@ -2,7 +2,7 @@
 /* Ajuste la hauteur de l'image automatiquement pour conserver les proportions - https://developer.mozilla.org/fr/docs/Web/CSS/height */
 img {
     max-width: 100%;
-    height: auto;
+    height: 100%;
   }
   
   /* Mise en forme du carousel en CSS.
